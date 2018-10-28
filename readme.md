@@ -1,6 +1,6 @@
 # turbo-crc32
 
-[![Build Status](https://travis-ci.org/reklatsmasters/turbo-crc32.svg?branch=master)](https://travis-ci.org/reklatsmasters/turbo-crc32)
+[![Build Status](https://travis-ci.com/reklatsmasters/turbo-crc32.svg?branch=master)](https://travis-ci.com/reklatsmasters/turbo-crc32)
 [![npm](https://img.shields.io/npm/v/turbo-crc32.svg)](https://npmjs.org/package/turbo-crc32)
 [![node](https://img.shields.io/node/v/turbo-crc32.svg)](https://npmjs.org/package/turbo-crc32)
 [![license](https://img.shields.io/npm/l/turbo-crc32.svg)](https://npmjs.org/package/turbo-crc32)
