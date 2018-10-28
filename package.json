@@ -1,0 +1,106 @@
+{
+  "name": "turbo-crc32",
+  "version": "0.0.0",
+  "description": "CRC32 generation using Slicing-by-N algorithm",
+  "scripts": {
+    "test": "npx eslint . && npx jest",
+    "test-ci": "npx eslint . && npx jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reklatsmasters/turbo-crc32.git"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "src",
+    "crc32.js",
+    "crc32c.js"
+  ],
+  "keywords": [
+    "crc",
+    "slicing-by-n",
+    "fast",
+    "crc32",
+    "crc32c"
+  ],
+  "author": "Dmitriy Tsvettsikh <me@reklatsmasters.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reklatsmasters/turbo-crc32/issues"
+  },
+  "homepage": "https://github.com/reklatsmasters/turbo-crc32#readme",
+  "devDependencies": {
+    "@nodertc/eslint-config": "^0.2.1",
+    "crc": "^3.8.0",
+    "eslint": "^5.8.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3"
+  },
+  "eslintConfig": {
+    "extends": "@nodertc",
+    "rules": {
+      "no-bitwise": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "test.js"
+        ],
+        "env": {
+          "jest": true
+        },
+        "settings": {
+          "import/resolver": {
+            "node": {
+              "moduleDirectory": [
+                "node_modules",
+                "src"
+              ]
+            }
+          }
+        },
+        "rules": {
+          "require-jsdoc": "off"
+        }
+      },
+      {
+        "files": [
+          "benchmark/*.js"
+        ],
+        "rules": {
+          "no-console": "off",
+          "require-jsdoc": "off",
+          "no-plusplus": "off",
+          "node/no-unpublished-require": "off"
+        }
+      }
+    ]
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>",
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/test.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "coverageDirectory": "<rootDir>/coverage",
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "cacheDirectory": ".jest-cache",
+    "haste": {
+      "providesModuleNodeModules": [
+        "internal",
+        "lib",
+        "streams",
+        "types"
+      ]
+    }
+  }
+}
