@@ -33,6 +33,7 @@
   "homepage": "https://github.com/reklatsmasters/turbo-crc32#readme",
   "devDependencies": {
     "@nodertc/eslint-config": "^0.2.1",
+    "buffer-crc32": "^0.2.13",
     "crc": "^3.8.0",
     "eslint": "^5.8.0",
     "jest": "^23.6.0",

@@ -26,9 +26,12 @@ crc32c('123456789') // 0xe3069283
 
 ## Benchmark
 
+*nodejs 10.14.1 / Ubuntu 16.04 x64*
+
 ```
-crc:         977.226ms
-turbo-crc32: 443.758ms
+crc:            987.866ms
+buffer-crc32:   1387.205ms
+turbo-crc32:    447.711ms
 ```
 
 ## License
