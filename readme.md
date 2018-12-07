@@ -17,6 +17,9 @@ const crc32c = require('turbo-crc32/crc32c');
 
 crc32('123456789')  // 0xcbf43926
 crc32c('123456789') // 0xe3069283
+
+// if you want signed integer, just substract MAX_UINT32 + 1
+crc32('123456789') - (0xffffffff + 1) // -873187034
 ```
 
 ## API
