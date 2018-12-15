@@ -9,6 +9,11 @@
 
 CRC32 generation using Slicing-by-N algorithm. CRC32 and CRC32C algorithms are supported.
 
+### Support
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png)](https://www.buymeacoffee.com/reklatsmasters)
+
+
 ## Usage
 
 ```js
@@ -18,8 +23,8 @@ const crc32c = require('turbo-crc32/crc32c');
 crc32('123456789')  // 0xcbf43926
 crc32c('123456789') // 0xe3069283
 
-// if you want signed integer, just substract MAX_UINT32 + 1
-crc32('123456789') - (0xffffffff + 1) // -873187034
+// if you want signed integer
+crc32('123456789') >> 0 // -873187034
 ```
 
 ## API
@@ -32,8 +37,8 @@ crc32('123456789') - (0xffffffff + 1) // -873187034
 *nodejs 10.14.1 / Ubuntu 16.04 x64*
 
 ```
-crc:            987.866ms
 buffer-crc32:   1387.205ms
+crc:            987.866ms
 turbo-crc32:    447.711ms
 ```
 
