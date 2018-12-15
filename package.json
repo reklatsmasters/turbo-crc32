@@ -1,6 +1,6 @@
 {
   "name": "turbo-crc32",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CRC32 generation using Slicing-by-N algorithm",
   "scripts": {
     "test": "npx eslint . && npx jest",
